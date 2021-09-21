@@ -39,7 +39,7 @@ function App() {
         <div className="footer" >
           <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}  >
             Kryptos <br />
-            All rights reserved <br/>
+            All rights reserved <br />
             Developer Kalpesh Mali
 
           </Typography.Title>
