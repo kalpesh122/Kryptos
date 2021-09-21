@@ -19,7 +19,7 @@ const Homepage = () => {
     return (
         <>
             <Title level={2} className="heading">
-                Mali bhai bhai bhai
+                Global Crypto Stats 122
             </Title>
             <Row>
                 <Col span={12}>
