@@ -8,13 +8,13 @@ import { Provider } from "react-redux"
 import store from "./app/store"
 import 'antd/dist/antd.css'
 ReactDOM.render(
-  <Router.StrictMode>
+  <React.StrictMode>
     <Router>
       <Provider store={store}>
         <App />
       </Provider>
     </Router>
-  </Router.StrictMode>,
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
