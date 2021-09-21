@@ -13,7 +13,7 @@ const Exchanges = () => {
     const { data, isFetching } = useGetExchangesQuery();
     // const { data, isFetching } = useGetExchangesQuery();
     const exchangesList = data?.data?.exchanges;
-    console.log(exchangesList)
+
 
     if (isFetching) return <Loader />;
 

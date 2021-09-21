@@ -1,15 +1,16 @@
 import React from 'react'
 import { Line } from "react-chartjs-2"
 import { Col, Row, Typography } from "antd"
+const { Title } = Typography
 const LineChart = ({ coinHistory, currentPrice, coinName }) => {
     const coinPrice = []
     const coinTimestamp = []
-    const { Title } = Typography
+
     // console.log(coinHistory?.data?.change, "New error")
 
     for (let i = 0; i < coinHistory?.data?.history?.length; i += 1) {
-        coinPrice.push(coinHistory.data.history[i].price)
-        coinTimestamp.push(new Date(coinHistory.data.history[i].timestamp).toLocaleDateString())
+        coinPrice.push(coinHistory?.data?.history[i].price)
+        coinTimestamp.push(new Date(coinHistory?.data?.history[i].timestamp.toLocaleDateString()).toLocaleDateString())
     }
 
     const data = {
